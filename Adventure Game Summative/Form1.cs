@@ -36,17 +36,8 @@ namespace Adventure_Game_Summative
         {
             name = nameInput.Text;
 
-            Graphics formGraphics = this.CreateGraphics();
-            Font bigFont = new Font("Consolas", 25, FontStyle.Bold);
-            Font smallFont = new Font("Consolas", 10, FontStyle.Bold);
-            SolidBrush drawBrush = new SolidBrush(Color.White);
-            Pen whitePen = new Pen(Color.White, 2);
-            Point[] shape = { new Point(100, 360), new Point(260, 360), new Point(260, 140), new Point(100, 140), new Point(100, 360) };
-            formGraphics.DrawPolygon(whitePen, shape);
-
-            formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
-            formGraphics.DrawString(name, bigFont, drawBrush, 140, 180);
-            formGraphics.DrawString("Died of:", smallFont, drawBrush, 100, 220);
+            
+           
 
 
 
@@ -67,12 +58,12 @@ namespace Adventure_Game_Summative
 
                 beginButton.Enabled = false;
 
-              //  redButtonPicture.Visible = true;
-            //    yellowButtonPicture.Visible = true;
-           //     blueButtonPicture.Visible = true;
-           //     firstChoiceLabel.Visible = true;
-           //     secondChoiceLabel.Visible = true;
-          //      thirdChoiceLabel.Visible = true;
+                redButtonPicture.Visible = true;
+                yellowButtonPicture.Visible = true;
+                blueButtonPicture.Visible = true;
+                firstChoiceLabel.Visible = true;
+                secondChoiceLabel.Visible = true;
+                thirdChoiceLabel.Visible = true;
 
                 titleLabel.Text = name + " looks at his phone. It reads: November 1, 12:00 AM. " + name + " looks around himself and barely makes out an abandoned lab at Central. What should " + name + " do?";
                 firstChoiceLabel.Text = "Check the front door";
@@ -82,6 +73,14 @@ namespace Adventure_Game_Summative
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            Graphics formGraphics = this.CreateGraphics();
+            Font bigFont = new Font("Consolas", 25, FontStyle.Bold);
+            Font smallFont = new Font("Consolas", 10, FontStyle.Bold);
+            SolidBrush drawBrush = new SolidBrush(Color.White);
+            Pen whitePen = new Pen(Color.White, 2);
+            Point[] shape = { new Point(100, 360), new Point(260, 360), new Point(260, 140), new Point(100, 140), new Point(100, 360) };
+            
+
             SoundPlayer billNye = new SoundPlayer(Properties.Resources.Bill_Nye__The_Science_Guy__Original_Intro___);
 
             int deathChance = randNum.Next(1, 101);
@@ -145,64 +144,188 @@ namespace Adventure_Game_Summative
                 {
                     scene = 25;
                 }
+                else if (scene == 20)
+                {
+                    scene = 30;
+                }
                 else if (scene == 6)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 3)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 4)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 8)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 11)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 12)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 13)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 15)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 19)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 21)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 25)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 18)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 26)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 27)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
                 else if (scene == 28)
                 {
+                    formGraphics.Clear(Color.Black);
+                    redButtonPicture.Visible = true;
+                    yellowButtonPicture.Visible = true;
+                    blueButtonPicture.Visible = true;
+                    firstChoiceLabel.Visible = true;
+                    secondChoiceLabel.Visible = true;
+                    thirdChoiceLabel.Visible = true;
+
                     scene = 0;
                 }
             }
@@ -268,6 +391,10 @@ namespace Adventure_Game_Summative
                 else if (scene == 23 && deathChance > 50)
                 {
                     scene = 28;
+                }
+                else if (scene == 20)
+                {
+                    scene = 31;
                 }
                 else if (scene == 6)
                 {
@@ -374,16 +501,34 @@ namespace Adventure_Game_Summative
                     billNye.Stop();
                     themeSong.PlayLooping();
 
-                    titleLabel.Text = name + " was jamming too hard and got killed by the monster. If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Jamming too\nhard to Bill Nye.",smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 4:
-                    titleLabel.Text = name + " is caught by the monster and slaughtered. If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+                  
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Being too\nslow to escape\nthe monster.", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 5:
                     titleLabel.Text = name + " sees a figure in the darkness and shuts the door then runs down the stairs to the second floor. Should" + name + "enter the library or continue running down the stairs?.";
@@ -392,10 +537,19 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "";
                     break;
                 case 6:
-                    titleLabel.Text = name + " is caught by the monster and killed. If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Being too\nslow to escape\nthe monster.", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 7:
                     titleLabel.Text = name + " enters the library and barricades the door with a table. " + name + "Realizes that there are onky two exits. Which exit should" + name + " take?";
@@ -404,10 +558,19 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "";
                     break;
                 case 8:
-                    titleLabel.Text = name + " is caught by the monster and killed. If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Starving to\ndeath after being\ntrapped in\nthe library.", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 9:
                     titleLabel.Text = "The door is unlocked and " + name + "runs down the stairs to the first floor. Should " + name + "go into the cafeteria or attempt to escape through the back doors.";
@@ -422,22 +585,49 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "Fight";
                     break;
                 case 11:
-                    titleLabel.Text = "The monster throws a chair at " + name + " and knocks them out. " + name + " doesn't know what happened next... If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Being knocked\nout by the monster", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 12:
-                    titleLabel.Text = "The glass is too thick to break and the monster kills " + name + " If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Being unable\nto escape\nthe monster.", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 13:
-                    titleLabel.Text = "The monster laughs at " + name + "'s attempt to survive. The monster kills " + name + "If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:God not\nbeing able to\nto save them.", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 14:
                     titleLabel.Text = "The back doors are locked. What should  " + name + " do?";
@@ -446,10 +636,19 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "";
                     break;
                 case 15:
-                    titleLabel.Text = name + " is caught by the monster and killed. If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Being too\nslow to escape\nthe monster.", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 16:
                     titleLabel.Text = name + " fights the monster... coming soon.";
@@ -478,10 +677,19 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "";
                     break;
                 case 19:
-                    titleLabel.Text = name + " picks up and unstoppers the test tube and is overtaken by a strange desire to drink the contents " + name + " begins to feel a mysterious change. " + name + " suddenly loses conciousness and has no recollection of what happens next...If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Turning into\na big green monster", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 20:
                     titleLabel.Text = name + " sees a random student jamming out to the bill nye theme song. Should " + name;
@@ -490,10 +698,19 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "";
                     break;
                 case 21:
-                    titleLabel.Text = name + " unstoppers the test tube and the test tube emits a gas which kills you. If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Being gased\nby a test tube", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = name +"Unstoppers the test tubetand it emits a lethal gas. You Lose! If you want to restart press R. If you want to exit press B.";
                     break;
                 case 22:
                     titleLabel.Text = name + " unstoppers the test tube and the test tube emits a gas which is harmless. What should" + name + " do?";
@@ -532,10 +749,26 @@ namespace Adventure_Game_Summative
                     thirdChoiceLabel.Text = "";
                     break;
                 case 28:
-                    titleLabel.Text = name + " breaks the window but doesn't surivie the jump. You lose! If you want to restart press R. If you want to exit press B.";
-                    firstChoiceLabel.Text = "Restart";
-                    secondChoiceLabel.Text = "Exit";
-                    thirdChoiceLabel.Text = "";
+                    redButtonPicture.Visible = false;
+                    yellowButtonPicture.Visible = false;
+                    blueButtonPicture.Visible = false;
+                    firstChoiceLabel.Visible = false;
+                    secondChoiceLabel.Visible = false;
+                    thirdChoiceLabel.Visible = false;
+
+                    formGraphics.DrawPolygon(whitePen, shape);
+                    formGraphics.DrawString("R.I.P", bigFont, drawBrush, 125, 150);
+                    formGraphics.DrawString(name, bigFont, drawBrush, 125, 180);
+                    formGraphics.DrawString("Died of:Falling out\nof a window", smallFont, drawBrush, 100, 220);
+
+                    titleLabel.Text = "You Lose! If you want to restart press R. If you want to exit press B.";
+                    break;
+                case 29:
+
+
+                    break;
+                case 30:
+
                     break;
             }
         }
